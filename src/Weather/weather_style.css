@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+body{
+    background-color:#e7d7c3 ;
+    /* background-color: black; */
+    text-align: center;
+    color: white;
+}
+.heading{
+    font-size: 55px;
+    margin: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.447),rgba(0, 0, 0, 0.423)),url("https://i.pinimg.com/originals/b6/7f/61/b67f61a1364ea22a050d701c7bf7858f.gif");
+    background-clip: text;
+    color: transparent;
+    background-size:contain;
+    background-position: center;
+    text-shadow: 0px 0px 2px black;
+}
+.weather_app{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.inside_div{
+    background-color:#c8ab96;
+    width: 400px;
+    /* height: 550px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+    position: relative;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.244),rgba(0, 0, 0, 0.715)),url("https://plus.unsplash.com/premium_photo-1676517307749-d36c6ece126e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwd2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.244),rgba(0, 0, 0, 0.715)),url("https://i.pinimg.com/originals/c8/ea/05/c8ea057e5b33769d5027d8f8a2b45a23.gif");
+    background-position: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+.inside_div input{
+    width: 300px;
+    height: 30px;
+    margin: 35px 5px 25px 0px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color:#F5EFE7;
+    padding: 8px 5px 5px 18px ;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 2px 5px 10px black;
+}
+input::placeholder{
+    font-weight: bold;
+}
+.inside_div button{
+    background-color: #F5EFE7;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 5px 10px black;
+}
+.search_icon{
+    padding: 12px;
+    font-size: 18px;
+}
+.time_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+    color: rgb(230, 214, 214);
+}
+.enter{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.loading img{
+    width: 80px;
+    height: 80px;
+    animation: rotate 1.5s ease-in-out  infinite;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.main{
+    background-color: rgba(255, 255, 255, 0.19);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /* color: black; */
+    /* box-shadow: 03px 0px 10px black; */
+}
+.temp{
+    font-size: 45px;
+    /* color: black; */
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.name{
+    font-size: 30px;
+}
+.clouds{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.emoji_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.19);
+}
+.emoji{
+    font-size: 55px;
+}
+.second_cloud{
+    position: relative;
+    top: 10px;
+    left: -35px;
+}
+.extra_info{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:15px;
+    /* background-color: red; */
+}
+.divs{
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.19);
+    border-radius: 10px;
+    padding: 15px 0px;
+}
+.data{
+    color:rgb(186, 183, 183);
+    /* font-size: 14px; */
+}
+.span{
+    font-weight: normal;
+    font-size: 15px;
+}
+.oops{
+    margin: 30px;
+} 
+.clear-sky {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://i.pinimg.com/originals/37/8e/ab/378eabe3f90259f97d680449dee494cc.gif');
+  background-size: cover;
+  background-position: center;
+}
+.cloudy-sky {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.507)), url("https://i.pinimg.com/originals/b6/7f/61/b67f61a1364ea22a050d701c7bf7858f.gif");
+  background-size: cover;
+  background-position: center;
+}
+.rainy-weather {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzUwczR0ZHYzbmFnM2ZiOGhycWg5czZkcHQ5OHpwNW5pODBuZjVrdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qHWAmPd3SWyY0/giphy.webp');
+  background-size: cover;
+  background-position: center;
+}
+.snowy-weather {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://cdna.artstation.com/p/assets/images/images/022/360/684/original/anthony-benson-snowscene3-v1.gif?1575152529');
+  background-size: cover;
+  background-position: center;
+}
+.thunderstorm-weather {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://media.tenor.com/uToSLPDUN44AAAAM/lightning-nature.gif');
+  background-size: cover;
+  background-position: center;
+}
+.hazy-weather {
+  background-image: linear-gradient(rgba(11, 11, 11, 0.441),rgba(0, 0, 0, 0.567)),url("https://i.pinimg.com/originals/03/53/cd/0353cdf9b3b43ea8e16506cde3ec94ef.gif");
+  background-size: cover;
+  background-position: center;
+}
+.default-weather {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.515),rgba(0, 0, 0, 0.685)),url("https://plus.unsplash.com/premium_photo-1676517307749-d36c6ece126e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwd2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
